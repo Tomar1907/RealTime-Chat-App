@@ -19,6 +19,9 @@
     "url": "https://github.com/Tomar1907/RealTime-Chat-App/issues"
   },
   "homepage": "https://github.com/Tomar1907/RealTime-Chat-App#readme",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "path-to-regexp": "^6.2.1"
   }
