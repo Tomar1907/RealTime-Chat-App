@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start":"npm run start --prefix backend"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Tomar1907/RealTime-Chat-App/issues"
   },
-  "homepage": "https://github.com/Tomar1907/RealTime-Chat-App#readme"
+  "homepage": "https://github.com/Tomar1907/RealTime-Chat-App#readme",
+  "dependencies": {
+    "path-to-regexp": "^6.2.1"
+  }
 }
