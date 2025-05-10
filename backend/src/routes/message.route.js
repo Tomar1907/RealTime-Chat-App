@@ -1,14 +1,12 @@
 import express from "express";
-import { protectRoute } from "../middlewares/auth.middleware.js";
-import { getUsersForSidebar, getMessages, sendMessage } from "../controllers/message.controller.js";
+import { protectRoute } from "../middleware/auth.middleware.js";
+import { getMessages, getUsersForSidebar, sendMessage } from "../controllers/message.controller.js";
 
 const router = express.Router();
 
-// Static routes first
 router.get("/users", protectRoute, getUsersForSidebar);
+router.get("/:id", protectRoute, getMessages);
 
-// Avoid conflict by prefixing dynamic routes
-router.get("/chat/:id", protectRoute, getMessages);
-router.post("/chat/send/:id", protectRoute, sendMessage);
+router.post("/send/:id", protectRoute, sendMessage);
 
 export default router;
